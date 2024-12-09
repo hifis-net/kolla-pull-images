@@ -8,12 +8,12 @@ kolla_release="zed-ubuntu-jammy"
 IMAGE_LIST="kolla-images.list"
 
 #
-for qw in `cat $IMAGE_LIST`
+while IFS= read -r image
 do
-echo "===========> Pull ==> $qw"
-docker pull $public_registry_host/openstack.kolla/$qw:$kolla_release
-docker tag $public_registry_host/openstack.kolla/$qw:$kolla_release "$local_registry_host:4000/openstack.kolla/$qw:$kolla_release"
-echo "===========> Push ==> $qw"
-docker push "$local_registry_host:4000/openstack.kolla/$qw:$kolla_release"
-docker rmi $public_registry_host/openstack.kolla/$qw:$kolla_release
-done
+echo "===========> Pull ==> ${image}"
+docker pull "${public_registry_host}/openstack.kolla/${image}:${kolla_release}"
+docker tag "${public_registry_host}/openstack.kolla/${image}:${kolla_release}" "$local_registry_host:4000/openstack.kolla/${image}:${kolla_release}"
+echo "===========> Push ==> ${image}"
+docker push "$local_registry_host:4000/openstack.kolla/${image}:${kolla_release}"
+docker rmi "${public_registry_host}/openstack.kolla/${image}:${kolla_release}"
+done < $IMAGE_LIST
