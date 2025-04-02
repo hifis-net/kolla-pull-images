@@ -1,9 +1,29 @@
-# kolla-pull-images.sh
-To pull images and push to local registry. 
+# OpenStack Kolla Pull Images
 
-# In script adjust variables for openstack release to download
+A simple shell script to pull [OpenStack Kolla](https://opendev.org/openstack/kolla)
+container images and push them to a local container registry.
 
-kolla_release="zed-ubuntu-jammy"
+## Usage
 
-# Run script:
+### Get the script
+
+```sh
+git clone https://github.com/hifis-net/kolla-pull-images.git
+cd kolla-pull-images
+```
+
+### Specify the OpenStack Kolla release
+
+To specify the desired Kolla release to download, please adjust the following
+variable inside `kolla-pull-images.sh`:
+
+```sh
+kolla_release="2024.2-ubuntu-jammy"
+```
+
+### Run the script
+
+```sh
+chmod +x kolla-pull-images.sh
 ./kolla-pull-images.sh
+```
