@@ -4,7 +4,7 @@
 
 public_registry_host="quay.io"
 local_registry_host="localhost:4000"
-kolla_release="zed-ubuntu-jammy"
+kolla_release="2023.1-ubuntu-jammy"
 IMAGE_LIST="kolla-images.list"
 
 #
