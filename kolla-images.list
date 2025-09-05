@@ -96,6 +96,8 @@ octavia-driver-agent
 octavia-health-manager
 octavia-housekeeping
 octavia-worker
+opensearch
+opensearch-dashboards
 openvswitch-db-server
 openvswitch-vswitchd
 ovn-controller
