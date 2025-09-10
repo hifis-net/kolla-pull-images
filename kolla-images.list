@@ -117,6 +117,9 @@ prometheus-node-exporter
 prometheus-openstack-exporter
 prometheus-v2-server
 rabbitmq
+rabbitmq-3-12
+rabbitmq-3-13
+rabbitmq-4-1
 redis
 redis-sentinel
 senlin-api
