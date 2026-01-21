@@ -18,7 +18,7 @@ To specify the desired Kolla release to download, please adjust the following
 variable inside `kolla-pull-images.sh`:
 
 ```sh
-kolla_release="2024.2-ubuntu-jammy"
+kolla_release="2025.1-ubuntu-noble"
 ```
 
 ### Run the script
