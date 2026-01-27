@@ -4,7 +4,7 @@
 
 public_registry_host="quay.io"
 local_registry_host="localhost:4000"
-kolla_release="2024.1-ubuntu-jammy"
+kolla_release="2025.1-ubuntu-noble"
 IMAGE_LIST="kolla-images.list"
 
 #
