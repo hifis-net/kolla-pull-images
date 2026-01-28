@@ -103,6 +103,7 @@ openvswitch-vswitchd
 ovn-controller
 ovn-nb-db-server
 ovn-northd
+ovn-sb-db-relay
 ovn-sb-db-server
 placement-api
 prometheus-alertmanager
