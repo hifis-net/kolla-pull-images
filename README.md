@@ -24,6 +24,5 @@ kolla_release="2025.1-ubuntu-noble"
 ### Run the script
 
 ```sh
-chmod +x kolla-pull-images.sh
 ./kolla-pull-images.sh
 ```
